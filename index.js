@@ -19,12 +19,12 @@ function generator() {
         .then(
             (data) => {
                 console.log(data);
-                textAdvice.textContent = `
-            ${data.slip.advice}
-            `;
-                Id.textContent = `
-            #${data.slip.id}
-            `
+
+                textAdvice.classList.add("animateAdvice");
+
+                // animate += textAdvice.classList.add("animateAdvice");
+                textAdvice.textContent = `  ${data.slip.advice} `;
+                Id.textContent = `  #${data.slip.id}  `
             }
         )
 

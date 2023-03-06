@@ -12,7 +12,7 @@
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 1rem;
     text-align: center;
     margin-top: 2rem;
     color: white;
@@ -34,24 +34,66 @@ body {
 
 }
 
+.fa-moon {
+    padding: 0.89rem;
+    /* width: 80%; */
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+.fa-moon:hover {
+    background-color: var(--neon-green);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 main {
     background-color: var(--dark-grayish-blue);
     width: 25%;
     padding: 1.2rem;
     border-radius: 1.5rem;
-    min-width: 250px;
+    min-width: 15.62rem;
     text-align: center;
 }
+
 #green {
     color: var(--neon-green);
 }
+
 .text {
     margin-top: 2rem;
     color: var(--light-cyan);
     font-size: 1.2rem;
+
 }
+
+.animateAdvice {
+    animation: animate 3s;
+}
+
+@keyframes animate {
+    0% {
+
+        color: var(--dark-grayish-blue);
+    }
+
+    50% {
+        color: var(--grayish-blue);
+    }
+
+    100% {
+
+        color: var(--light-cyan);
+    }
+}
+
 .text h1 {
     font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    margin-bottom: 1rem;
 }
 
 .divider {
@@ -63,6 +105,7 @@ main {
     margin-bottom: 2rem;
     /* background-color: green; */
 }
+
 .diceC {
     display: flex;
     align-items: center;
@@ -79,4 +122,13 @@ main {
     margin-top: 2rem;
     cursor: pointer;
 
+}
+
+.diceC:hover {
+    background-color: yellow;
+
+}
+
+#dice:hover{
+    background-color: var(--light-cyan);
 }
